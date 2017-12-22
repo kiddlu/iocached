@@ -8,7 +8,7 @@ struct map_struct
    size_t length;
 };
 
-struct map_struct native_tbl[] = {
+struct map_struct native_table[] = {
     //arm64
     { "/system/bin/app_process64", NULL, 0 },
     { "/system/bin/linker64", NULL, 0 },
@@ -56,7 +56,7 @@ struct map_struct native_tbl[] = {
     { "/system/lib/libz.so", NULL, 0 },
 };
 
-struct map_struct framework_tbl[] = {
+struct map_struct framework_table[] = {
     { "/system/framework/ext.jar", NULL, 0 },
     { "/system/framework/core-libart.jar", NULL, 0 },
 
@@ -66,7 +66,7 @@ struct map_struct framework_tbl[] = {
     { "/system/framework/oat/arm64/services.odex", NULL, 0 },
 };
 
-struct map_struct app_tbl[] = {
+struct map_struct app_table[] = {
     { "/system/app/webview/webview.apk", NULL, 0 },
  
     //{ "/system/app/GallerySmartisan/GallerySmartisan.apk", NULL, 0 },
@@ -77,7 +77,7 @@ struct map_struct app_tbl[] = {
     { "/system/app/SmartisanOSThemeOchikuri/SmartisanOSThemeOchikuri.apk", NULL, 0 }
 };
 
-struct map_struct priv_app_tbl[] = {
+struct map_struct priv_app_table[] = {
     //{ "/system/priv-app/MmsSmartisan/MmsSmartisan.apk", NULL, 0 }
 };
 #endif

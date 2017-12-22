@@ -10,7 +10,7 @@
 
 #define LOG_PATH "/var/log/iocached.log"
 
-static int set_map_file(struct map_struct *file)
+static int set_map_lock(struct map_struct *file)
 {
     struct stat st;
     int ret = 0;
@@ -46,20 +46,20 @@ static int set_map_file(struct map_struct *file)
 int daemon_main(int argc, char **argv)
 {
     int i;
-    for (i=0; i<ARRAY_LENGTH(native_tbl); i++) {
-        set_map_file(&native_tbl[i]);
+    for (i=0; i<ARRAY_LENGTH(native_table); i++) {
+        set_map_lock(&native_table[i]);
     }
 
-    for (i=0; i<ARRAY_LENGTH(framework_tbl); i++) {
-        set_map_file(&framework_tbl[i]);
+    for (i=0; i<ARRAY_LENGTH(framework_table); i++) {
+        set_map_lock(&framework_table[i]);
     }
 
-    for (i=0; i<ARRAY_LENGTH(app_tbl); i++) {
-        set_map_file(&app_tbl[i]);
+    for (i=0; i<ARRAY_LENGTH(app_table); i++) {
+        set_map_lock(&app_table[i]);
     }
 
-    for (i=0; i<ARRAY_LENGTH(priv_app_tbl); i++) {
-        set_map_file(&priv_app_tbl[i]);
+    for (i=0; i<ARRAY_LENGTH(priv_app_table); i++) {
+        set_map_lock(&priv_app_table[i]);
     }
 
     return 0;
