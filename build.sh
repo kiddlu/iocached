@@ -1,13 +1,13 @@
 #!/bin/bash 
+
 set -e 
 PWD=$(pwd)
 BUILD_DIR=${PWD}/output
 
-if [   -e "$BUILD_DIR" ];then
-    rm -rf "$BUILD_DIR"
+if [ ! -e "$BUILD_DIR" ];then
+    mkdir -p "$BUILD_DIR"
+    cmake ..
 fi
-mkdir -p "$BUILD_DIR"
 
 cd "$BUILD_DIR"
-cmake ..
-make -j4 
+make -j2
