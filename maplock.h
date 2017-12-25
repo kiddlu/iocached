@@ -13,6 +13,8 @@ struct map_struct native_table[] = {
     { "/system/bin/app_process64", NULL, 0 },
     { "/system/bin/linker64", NULL, 0 },
     { "/system/bin/surfaceflinger", NULL, 0 },
+    { "/system/bin/toolbox", NULL, 0 },
+    { "/system/bin/toybox", NULL, 0 },
 
     { "/system/lib64/libandroid.so", NULL, 0 },
     { "/system/lib64/libandroid_runtime.so", NULL, 0 },
@@ -46,20 +48,18 @@ struct map_struct framework_table[] = {
     { "/system/framework/framework-smartisanos-res/framework-smartisanos-res.apk", NULL, 0 },
 
     { "/system/framework/oat/arm64/services.odex", NULL, 0 },
+
+    { "/system/framework/oat/arm/org.simalliance.openmobileapi.odex", NULL, 0 }
 };
 
 struct map_struct app_table[] = {
     { "/system/app/webview/webview.apk", NULL, 0 },
- 
-    //{ "/system/app/GallerySmartisan/GallerySmartisan.apk", NULL, 0 },
-    //{ "/system/app/CameraSmartisan/CameraSmartisan.apk", NULL, 0 },
+    { "/system/app/webview/oat/arm/webview.odex", NULL, 0 },
 
     { "/system/app/SmartisanOSThemeThirdApp/SmartisanOSThemeThirdApp.apk", NULL, 0 },
-    //{ "/system/app/SmartisanOSThemeDefault/SmartisanOSThemeDefault.apk", NULL, 0 },
     { "/system/app/SmartisanOSThemeOchikuri/SmartisanOSThemeOchikuri.apk", NULL, 0 }
 };
 
 struct map_struct priv_app_table[] = {
-    //{ "/system/priv-app/MmsSmartisan/MmsSmartisan.apk", NULL, 0 }
 };
 #endif
