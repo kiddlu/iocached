@@ -1,0 +1,4 @@
+service iocached /system/bin/iocached
+    class main
+    user root
+    group root system
