@@ -45,7 +45,7 @@ static int set_map_lock(struct map_struct *file)
 
 int daemon_main(int argc, char **argv)
 {
-    int i;
+    unsigned int i;
     for (i=0; i<ARRAY_LENGTH(native_table); i++) {
         set_map_lock(&native_table[i]);
     }
