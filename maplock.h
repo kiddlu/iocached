@@ -12,48 +12,30 @@ struct map_struct native_table[] = {
     //arm64
     { "/system/bin/app_process64", NULL, 0 },
     { "/system/bin/linker64", NULL, 0 },
+    { "/system/bin/surfaceflinger", NULL, 0 },
 
     { "/system/lib64/libandroid.so", NULL, 0 },
     { "/system/lib64/libandroid_runtime.so", NULL, 0 },
     { "/system/lib64/libart.so", NULL, 0 },
     { "/system/lib64/libbinder.so", NULL, 0 },
-    { "/system/lib64/libc++.so", NULL, 0 },
     { "/system/lib64/libc.so", NULL, 0 },
-    { "/system/lib64/libcrypto.so", NULL, 0 },
     { "/system/lib64/libcutils.so", NULL, 0 },
-    { "/system/lib64/libicui18n.so", NULL, 0 },
+    { "/system/lib64/libgui.so", NULL, 0 },
+    { "/system/lib64/libhwui.so", NULL, 0 },
     { "/system/lib64/libjpeg.so", NULL, 0 },
     { "/system/lib64/libm.so", NULL, 0 },
-    { "/system/lib64/libpcre.so", NULL, 0 },
     { "/system/lib64/libpng.so", NULL, 0 },
-    { "/system/lib64/libselinux.so", NULL, 0 },
-    { "/system/lib64/libsqlite.so", NULL, 0 },
-    { "/system/lib64/libssl.so", NULL, 0 },
-    { "/system/lib64/libstdc++.so", NULL, 0 },
+    { "/system/lib64/libskia.so", NULL, 0 },
+    { "/system/lib64/libsurfaceflinger.so", NULL, 0 },
+    { "/system/lib64/libui.so", NULL, 0 },
+    { "/system/lib64/libutils.so", NULL, 0 },
     { "/system/lib64/libz.so", NULL, 0 },
+
+    //arm64-vendor
 
     //arm32
     { "/system/bin/app_process32", NULL, 0 },
-    { "/system/bin/linker", NULL, 0 },
-
-    { "/system/lib/libandroid.so", NULL, 0 },
-    { "/system/lib/libandroid_runtime.so", NULL, 0 },
-    { "/system/lib/libart.so", NULL, 0 },
-    { "/system/lib/libbinder.so", NULL, 0 },
-    { "/system/lib/libc++.so", NULL, 0 },
-    { "/system/lib/libc.so", NULL, 0 },
-    { "/system/lib/libcrypto.so", NULL, 0 },
-    { "/system/lib/libcutils.so", NULL, 0 },
-    { "/system/lib/libicui18n.so", NULL, 0 },
-    { "/system/lib/libjpeg.so", NULL, 0 },
-    { "/system/lib/libm.so", NULL, 0 },
-    { "/system/lib/libpcre.so", NULL, 0 },
-    { "/system/lib/libpng.so", NULL, 0 },
-    { "/system/lib/libselinux.so", NULL, 0 },
-    { "/system/lib/libsqlite.so", NULL, 0 },
-    { "/system/lib/libssl.so", NULL, 0 },
-    { "/system/lib/libstdc++.so", NULL, 0 },
-    { "/system/lib/libz.so", NULL, 0 },
+    { "/system/bin/linker", NULL, 0 }
 };
 
 struct map_struct framework_table[] = {
