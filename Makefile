@@ -9,11 +9,11 @@ define shcmd-makepre
 endef
 
 define shcmd-make
-	cd $(BUILD_DIR) && make -j$(CPUS) $(MAKE_OPT)
+	@cd $(BUILD_DIR) && make -j$(CPUS) $(MAKE_OPT) | grep -v "^make\[[0-9]\]:"
 endef
 
 define shcmd-makeclean
-	cd $(BUILD_DIR) && make clean
+	@cd $(BUILD_DIR) && make clean
 endef
 
 define shcmd-makerm
