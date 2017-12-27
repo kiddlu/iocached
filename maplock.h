@@ -41,7 +41,7 @@ struct map_struct native_table[] = {
 };
 
 struct map_struct framework_table[] = {
-    { "/system/framework/ext.jar", NULL, 0 },
+    //{ "/system/framework/ext.jar", NULL, 0 },
     { "/system/framework/core-libart.jar", NULL, 0 },
 
     { "/system/framework/framework-res.apk", NULL, 0 },
@@ -53,7 +53,7 @@ struct map_struct framework_table[] = {
 };
 
 struct map_struct app_table[] = {
-    { "/system/app/webview/webview.apk", NULL, 0 },
+    //{ "/system/app/webview/webview.apk", NULL, 0 },
     { "/system/app/webview/oat/arm/webview.odex", NULL, 0 },
 
     { "/system/app/SmartisanOSThemeThirdApp/SmartisanOSThemeThirdApp.apk", NULL, 0 },
